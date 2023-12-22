@@ -8,7 +8,7 @@
 Метрикой в этом соревновании является Mean F1-Score. F1-мера вычисляется на основе точности и полноты.
 
 ### **Результаты соревнования:**
-В качестве классификатора изображений была выбрана предобученная сверточная сеть inception_v3, была проведена аугементация подаваемых на модель изображений и использован scheduler для плавного уменьшения скорости обучения оптимизатора. На валидационной выборке данный классификатор позволил добиться  Accuracy в 0.9818, при чем минумум loss удалось достичь уже на 18 эпохе. F1 score на валидационной выборке составил 1.0. Итоговый F1 Score на Kaggle (на тестовой выборке) составил 0.98831, что говорит о качестве использованного классификатора.
+В качестве классификатора изображений была выбрана предобученная сверточная сеть inception_v3, была проведена аугементация подаваемых на модель изображений и использован scheduler для плавного уменьшения скорости обучения оптимизатора. На валидационной выборке данный классификатор позволил добиться  Accuracy в 0.9818, при чем минумум loss удалось достичь уже на 18 эпохе. F1 score на валидационной выборке составил 1.0. Итоговый F1 Score на Kaggle (на тестовой выборке) составил 0.98831, что говорит о высоком качестве предсказания обученного классификатора.
 
 
 #
@@ -23,4 +23,4 @@ The Simpsons series has been on television for more than 25 years, and during th
 The metric for this competition is the Mean F1-Score. The F1 measure is calculated based on precision and recall.
 
 ### **Competition Results:**
-The pre-trained convolutional network inception_v3 was chosen as an image classifier. The augmented images were fed to the model and a scheduler was used to smoothly reduce the learning rate of optimizer. The classifier allowed achieving the Accuracy of 0.9818 within the validation set while the minimum Loss was achieved already at the 18th epoch. F1 score within the validation set was 1.0. The final F1 Score on Kaggle (within test sample) was 0.98831, which indicates the quality of the classifier.
+The pre-trained convolutional network inception_v3 was chosen as an image classifier. The augmented images were fed to the model and a scheduler was used to smoothly reduce the learning rate of optimizer. The classifier allowed achieving the Accuracy of 0.9818 within the validation set while the minimum Loss was achieved already at the 18th epoch. F1 score within the validation set was 1.0. The final F1 Score on Kaggle (within test sample) was 0.98831, which indicates the high prediction quality of the trained classifier.
