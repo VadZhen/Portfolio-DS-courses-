@@ -22,7 +22,10 @@
 - Построение и анализ ROC-кривой, accuracy, матрицы ошибок и важности признаков лучшей модели на тестовой выборке.
 - Отчет о проделанной работе
 
-
+#### Выводы по проекту:
+Построенная модель машинного обучения LightGBMClassifier эффективно справляется с предсказанием ухода клиентов от оператора связи «Ниединогоразрыва.ком» со значением метрики ROC-AUC в 0.92, что выше поставленной задачи - "метрика ROC-AUC на тестовой выборке должна составлять не менее 0.85". Высокое качество предсказания модели получилось достичь за счет устранения мультиколлиарности, удаления избыточных признаков и признаков, имеющих высокую корреляцию с целевым признаком. Для предотвращения утечки данных в модели используются конвейеры (pipeline) для кодирования и масштабирования признаков.
+Также модель дала возможность определить наиболее важные признаки: близость окончания ежемесячного договора, длительность обслуживания клиента, ежемесячные траты на услуги, потраченные деньги на услуги. Заказчику рекомендуется обратить внимание на эти признаки, влияя на которые можно снизить вероятность ухода клиентов.
+Модель машинного обучения рекомендуется к вводу в экслуатацию.
 
 #
 # A machine learning model able to predict the departure of telecom operator customers
@@ -48,3 +51,9 @@
 - Assessing the quality of the best model on the test sample
 - Construction and analysis of the ROC curve, accuracy, error matrix and importance of features for the best model on test sample.
 - Progress report
+
+#### Project Conclusions:
+The constructed LightGBMClassifier machine learning model effectively copes with predicting clients' departure from the telecom operator “Niedinogorazryva.com” with a ROC-AUC metric value of 0.92, which is higher than the set requirement - “the ROC-AUC metric on the test sample should be at least 0.85.” A high quality of model prediction was achieved by eliminating multicolliarity, removing redundant features, and removing features having a high correlation with the target. To prevent data leakage, the model uses pipelines to encode and scale features.
+The model also made it possible to determine the most important features: the proximity of the monthly contract end, the client’s service duration, monthly expenses for services, and money spent on services. 
+The contracting authority is recommended to pay attention to these features, which can reduce the likelihood of customers leaving.
+The machine learning model is recommended for implementation.
